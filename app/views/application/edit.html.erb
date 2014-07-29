@@ -1,0 +1,8 @@
+<h2> <center>Edit Movie</center> </h2>
+<br><br><br>
+<form action=<%="/update_movie/#{@m.id}" %>>
+  <input type="text" name="title"  value=<%= "#{@m.title}" %>>
+  <input type="text" name="url" value=<%= "#{@m.url}" %>>
+  <input type="text" name="image" value=<%= "#{@m.image}" %>>
+  <input type="submit">
+</form>
